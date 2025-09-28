@@ -90,7 +90,7 @@
     const li = document.createElement("li");
     const textnode = document.createTextNode(taskInput.value);
 
-    // ❌ delete button
+    // ❌ delete button for list items(li)      
     const delBtn = document.createElement("button");
     delBtn.textContent = "❌";
     delBtn.addEventListener("click", function () {
@@ -109,8 +109,9 @@
     li.appendChild(delBtn);
     list.appendChild(li);
 
-    taskInput.value = ""; // clear input
+    taskInput.value = ""; // clear the input text in input area to make it more proffessional
   });
     </script>
   </body>
 </html>
+
